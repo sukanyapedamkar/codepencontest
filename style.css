@@ -1,0 +1,357 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700);
+/* --------------- Reset style : Start ---------------*/
+html,
+body,
+a,
+p,
+h1,
+h2,
+aside,
+header{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+body{
+    background: #ffffff;
+    font-family: 'Roboto Slab', serif;
+    font-size: 12px;
+    margin: 0 auto;
+    color: #444444;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+h1,
+h2{
+    font-weight: normal;
+}
+/* --------------- Reset style : End ---------------*/
+
+  .profile-card{
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -250px 0 0 -400px;
+    background: url("http://www.fractalink.com/works/contest/sukanya/bgImg.jpg") repeat-x 0px -600px #cccccc;
+    overflow: hidden;
+    -webkit-animation: contAnim 0.8s 1.8s ease-in-out forwards;
+    animation: contAnim 0.8s 1.8s ease-in-out forwards;    
+  }
+  @-webkit-keyframes contAnim
+  {  
+    0%{background: url("http://www.fractalink.com/works/contest/sukanya/bgImg.jpg") repeat-x 0px -600px #cccccc;}
+    50%{background: url("http://www.fractalink.com/works/contest/sukanya/bgImg.jpg") repeat-x 0px 0px #cccccc; }
+    60%{background: url("http://www.fractalink.com/works/contest/sukanya/bgImg.jpg") repeat-x 0px 0px #282037; }
+    100%{background: url("http://www.fractalink.com/works/contest/sukanya/bgImg.jpg") repeat-x 0px -600px #282037;}
+  }
+
+  header{
+    position: absolute;
+    width: 1000px;
+    height: 1000px;
+    margin: -500px 0 0 -500px;
+    border-radius:50%;
+    display: inline-block;
+    left: 50%;
+    top: 50%;
+    background: #382e66;
+    -webkit-animation: roundBganim 2.4s ease-in 1 forwards;
+    animation: roundBganim 2.4s ease-in 1 forwards;  
+    animation-delay:0.8s;
+    -webkit-animation-delay:0.8s;  
+    z-index: 4;
+  }
+
+  @-webkit-keyframes roundBganim
+  {   0%{width: 1000px;height: 1000px;margin: -500px 0 0 -500px;}
+      18%{width: 288px;height: 288px;margin: -144px 0 0 -144px;}
+      60%{ width: 288px;height: 288px;margin: -144px 0 0 -144px;-webkit-transform: scale(1);}
+      70%{ width: 288px;height: 288px;margin: -144px 0 0 -144px;-webkit-transform: scale(1);}
+      90%{ width: 288px;height: 288px;margin: -144px 0 0 -375px;-webkit-transform: scale(.8);}
+      100%{width: 288px;height: 288px;margin: -144px 0 0 -375px;-webkit-transform: scale(.8);}
+  }
+   @-moz-keyframes roundBganim
+  {   0%{width: 1000px;height: 1000px;margin: -500px 0 0 -500px;}
+      18%{width: 288px;height: 288px;margin: -144px 0 0 -144px;}
+      60%{ width: 288px;height: 288px;margin: -144px 0 0 -144px;-webkit-transform: scale(1);}
+      70%{ width: 288px;height: 288px;margin: -144px 0 0 -144px;-moz-transform: scale(1);}
+      90%{ width: 288px;height: 288px;margin: -144px 0 0 -375px;-moz-transform: scale(.8);}
+      100%{width: 288px;height: 288px;margin: -144px 0 0 -375px;-moz-transform: scale(.8);}
+  }
+   @-ms-keyframes roundBganim
+  {   0%{width: 1000px;height: 1000px;margin: -500px 0 0 -500px;}
+      18%{width: 288px;height: 288px;margin: -144px 0 0 -144px;}
+      60%{ width: 288px;height: 288px;margin: -144px 0 0 -144px;-webkit-transform: scale(1);}
+      70%{ width: 288px;height: 288px;margin: -144px 0 0 -144px;-ms-transform: scale(1);}
+      90%{ width: 288px;height: 288px;margin: -144px 0 0 -375px;-ms-transform: scale(.8);}
+      100%{width: 288px;height: 288px;margin: -144px 0 0 -375px;-ms-transform: scale(.8);}
+  }
+   @keyframes roundBganim
+  {   0%{width: 1000px;height: 1000px;margin: -500px 0 0 -500px;}
+      18%{width: 288px;height: 288px;margin: -144px 0 0 -144px;}
+      60%{ width: 288px;height: 288px;margin: -144px 0 0 -144px;-webkit-transform: scale(1);}
+      70%{ width: 288px;height: 288px;margin: -144px 0 0 -144px;transform: scale(1);}
+      90%{ width: 288px;height: 288px;margin: -144px 0 0 -375px;transform: scale(.8);}
+      100%{width: 288px;height: 288px;margin: -144px 0 0 -375px;transform: scale(.8);}
+  }
+
+  header a{
+    width: 288px;
+    height: 288px;
+    margin: -144px 0 0 -144px;
+    border-radius: 50%; 
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 50%;  
+    background: url("http://www.fractalink.com/works/contest/sukanya/sprite1.png") no-repeat -10px 0 #382e66;
+    animation: myanim 2.5s steps(58) forwards; 
+    -webkit-animation: myanim 2.5s steps(58) forwards;    
+  }
+
+  @-webkit-keyframes myanim
+  {
+    0%{background-position: -10px 0;}
+    100%{background-position: -10px -17400px;}
+  }
+  @-moz-keyframes myanim
+  {
+    0%{background-position: -10px 0;}
+    100%{background-position: -10px -17400px;}
+  }
+  @-ms-keyframes myanim
+  {
+    0%{background-position: -10px 0;}
+    100%{background-position: -10px -17400px;}
+  }
+  @keyframes myanim
+  {
+    0%{background-position: -10px 0;}
+    100%{background-position: -10px -17400px;}
+  }
+
+  header img{
+    visibility: hidden;
+  }
+
+   h1{
+    font-size:44px;
+    color: #fff;
+    line-height: 46px;
+    position: absolute;
+    top: 10px;
+    left: 325px;
+    opacity: 0;
+    z-index: 5;
+    width: 600px;
+    font-weight: 500;
+    animation:fadeInDownOne 0.4s 3.4s linear 1 forwards;
+    -webkit-animation:fadeInDownOne 0.4s 3.4s linear 1 forwards;
+  }
+  @-webkit-keyframes fadeInDownOne { 
+      0% {opacity: 0;-webkit-transform: translateY(-20px);} 
+      100% {opacity: 1;-webkit-transform: translateY(0);} 
+  }
+  @-moz-keyframes fadeInDownOne { 
+      0% {opacity: 0;-moz-transform: translateY(-20px);} 
+      100% {opacity: 1;-moz-transform: translateY(0);} 
+  }
+  @-ms-keyframes fadeInDownOne { 
+      0% {opacity: 0;-ms-transform: translateY(-20px);} 
+      100% {opacity: 1;-ms-transform: translateY(0);} 
+  }
+  @keyframes fadeInDownOne { 
+      0%{opacity: 0;transform: translateY(-20px);} 
+      100%{opacity: 1;transform: translateY(0);} 
+  } 
+
+  h2{
+    font-size: 23px;
+    line-height: 25px;
+    color: #eeb62b;
+    opacity: 0;
+    position: absolute;
+    font-weight: 300;
+    top: 60px;
+    left: 325px;
+    z-index: 5;
+    width: 100%;
+    animation:fadeInDownTwo 0.4s 3.8s linear 1 forwards ;
+    -webkit-animation: fadeInDownTwo 0.4s 3.8s linear 1 forwards;
+  }
+  @-webkit-keyframes fadeInDownTwo { 
+      0% { opacity: 0; -webkit-transform: translateY(-30px);} 
+      100% { opacity: 1;-webkit-transform: translateY(0);} 
+  }
+  @-moz-keyframes fadeInDownTwo { 
+      0% { opacity: 0; -moz-transform: translateY(-30px);} 
+      100% { opacity: 1;-moz-transform: translateY(0);} 
+  }
+  @-ms-keyframes fadeInDownTwo { 
+      0% { opacity: 0; -ms-transform: translateY(-30px);} 
+      100% { opacity: 1;-ms-transform: translateY(0);} 
+  } 
+  @keyframes fadeInDownTwo { 
+      0% {opacity: 0;transform: translateY(-30px);} 
+      100% {opacity: 1;transform: translateY(0);} 
+  } 
+
+  .profile-bio p
+  {
+    font-size: 15px;
+    line-height: 20px;
+    color: #d3c8f1;
+    font-weight: 100;
+    margin-right: 60px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    opacity: 0;
+    position: absolute;
+    top: 224px;
+    left: 315px;
+    z-index: 5;
+    animation: bioAnim 0.9s 4.2s linear 1 forwards ;
+    -webkit-animation: bioAnim 0.9s 4.2s linear 1 forwards ;
+  }
+
+   @-webkit-keyframes bioAnim { 
+    0% {opacity: 0;} 
+    100% {opacity: 1;} 
+  }
+   @-moz-keyframes bioAnim { 
+    0% {opacity: 0;} 
+    100% {opacity: 1;} 
+  }
+   @-ms-keyframes bioAnim { 
+    0% {opacity: 0;} 
+    100% {opacity: 1;} 
+  } 
+  @keyframes bioAnim { 
+      0% {opacity: 0;} 
+      100% {opacity: 1;} 
+  } 
+
+  .profile-social-links
+  {
+    float: left;
+  }
+  .profile-social-links li{
+    float: left;  
+    position: absolute;
+    left: 306px;
+    top: 320px;  
+    opacity: 0;
+    
+  }
+  .profile-social-links li:first-child{
+    z-index: 3;
+    animation: linkAnim1 0.3s 4.6s ease-in-out 1  forwards;
+    -webkit-animation: linkAnim1 0.3s 4.6s ease-in-out 1  forwards;
+  }
+
+  @-webkit-keyframes linkAnim1{ 
+    0% {opacity: 0;-webkit-transform: translateY(20px);} 
+    100% {opacity: 1;-webkit-transform: translateY(0);}
+  }
+  @-moz-keyframes linkAnim1{ 
+    0% {opacity: 0;-moz-transform: translateY(20px);} 
+    100% {opacity: 1;-moz-transform: translateY(0);}
+  } 
+  @-ms-keyframes linkAnim1{ 
+    0% {opacity: 0;-ms-transform: translateY(20px);} 
+    100% {opacity: 1;-ms-transform: translateY(0);}
+  } 
+  @keyframes linkAnim1{ 
+      0% {opacity: 0;transform: translateY(20px);} 
+      100% {opacity: 1;transform: translateY(0);} 
+  } 
+
+  .profile-social-links li:nth-child(2){
+    z-index: 2;
+    animation: linkAnim2 0.3s 4.8s ease-in-out 1 forwards;
+    -webkit-animation: linkAnim2 0.3s 4.8s ease-in-out 1 forwards;
+    left: 370px;
+  }
+
+  @-webkit-keyframes linkAnim2{ 
+    0% {opacity: 0;-webkit-transform: translateY(20px);} 
+    100% {opacity: 1;-webkit-transform: translateY(0);}
+  }
+  @-moz-keyframes linkAnim2{ 
+    0% {opacity: 0;-moz-transform: translateY(20px);} 
+    100% {opacity: 1;-moz-transform: translateY(0);}
+  }
+  @-ms-keyframes linkAnim2{ 
+    0% {opacity: 0;-ms-transform: translateY(20px);} 
+    100% {opacity: 1;-ms-transform: translateY(0);}
+  }
+  @keyframes linkAnim2{ 
+      0% {opacity: 0;transform: translateY(20px);} 
+      100% {opacity: 1;transform: translateY(0);} 
+  } 
+
+  .profile-social-links li:nth-child(3){
+    z-index: 1;
+    animation: linkAnim3 0.3s 5s ease-in-out 1  forwards;
+    -webkit-animation: linkAnim3 0.3s 5s ease-in-out 1  forwards;
+    left: 435px;
+  }
+
+  @-webkit-keyframes linkAnim3{ 
+    0% {opacity: 0;-webkit-transform: translateY(20px);} 
+    100% {opacity: 1;-webkit-transform: translateY(0);}
+  } 
+  @-moz-keyframes linkAnim3{ 
+    0% {opacity: 0;-moz-transform: translateY(20px);} 
+    100% {opacity: 1;-moz-transform: translateY(0);}
+  } 
+  @-ms-keyframes linkAnim3{ 
+    0% {opacity: 0;-ms-transform: translateY(20px);} 
+    100% {opacity: 1;-ms-transform: translateY(0);}
+  } 
+  @keyframes linkAnim3{ 
+      0% {opacity: 0;transform: translateY(20px);} 
+      100% {opacity: 1;transform: translateY(0);} 
+  } 
+  .profile-social-links li a{
+    width: 64px;
+    height: 64px;
+    overflow: hidden;
+    float: left;
+    border-width: 10px;
+    border-color: transparent;
+    border-style: solid;
+    -moz-border-style: solid;
+    -webkit-border-style: solid;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+  
+   -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    transition: 0.5s ease;
+  }
+
+  .profile-social-links li a img{
+    width: 100%;
+  }
+
+ .profile-social-links li a:hover{
+    border-width: 0;
+    border-color: #695c91;}
